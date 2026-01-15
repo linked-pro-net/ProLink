@@ -56,3 +56,29 @@ This Turborepo has some additional tools already setup for you:
 - [TypeScript](https://www.typescriptlang.org/) for static type checking
 - [ESLint](https://eslint.org/) for code linting
 - [Prettier](https://prettier.io) for code formatting
+
+
+## Local repo git setup wihtout ssh
+
+```base
+
+// setup git config
+git config --local user.name <userName>
+
+git config --local user.email <devspace6@gmail.com>
+
+// remove old credentical for current repo
+git config --local --unset credential.helper
+
+```
+
+### Github authentication via PAT without SSH setup.
+```
+git push origin <branch_name>
+
+// above will ask username/password
+
+username: linked-pro-net
+password: <github_Personal_Access_Token>
+
+```
