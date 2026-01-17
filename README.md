@@ -45,7 +45,7 @@ For example, in [tailwind.config.ts](packages/tailwind-config/tailwind.config.ts
     "../../packages/ui/*.{js,ts,jsx,tsx}",
   ],
 ```
-
+ 
 If you choose this strategy, you can remove the `tailwindcss` and `autoprefixer` dependencies from the `ui` package.
 
 ### Utilities
