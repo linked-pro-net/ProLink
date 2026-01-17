@@ -2,8 +2,10 @@
   "name": "with-tailwind",
   "private": true,
   "scripts": {
+    "docker:up": "docker compose up -d || true",
+    "docker:down": "docker compose down",
+    "dev": "pnpm docker:up && turbo run dev; pnpm docker:down",
     "build": "turbo run build",
-    "dev": "turbo run dev",
     "lint": "turbo run lint",
     "check-types": "turbo run check-types",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
